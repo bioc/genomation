@@ -1,3 +1,37 @@
+genomation 1.2.1
+--------------
+
+IMPROVEMENTS AND BUG FIXES
+
+* merge devel branch (genomation v1.3.2) into 
+  release-3.2 branch of genomation BioC-mirror
+  (genomation v1.1.27).
+  It fixes bug regarding readr::read_delim()(v1.1.27)
+  and adds improvements from v1.3.1 and v1.3.2.
+
+genomation 1.3.2
+--------------
+
+IMPROVEMENTS AND BUG FIXES
+
+*  strands of reads in paired-end BAM files are inferred depending on strand of 
+   first alignment from the pair. It's a default setting of the strandMode argument
+   in the readGAlignmentPairs function.
+*  added new argument to ScoreMatrix, ScoreMatrixBin and ScoreMatrixList functions
+   library.size indicating total number of aligned reads of a BAM file for
+   normalization.
+* removed argument stranded from ScoreMatrix, ScoreMatrixBin and 
+  ScoreMatrixList functions
+
+genomation 1.3.1
+--------------
+
+IMPROVEMENTS AND BUG FIXES
+
+*  according to changes in behaviour of readr::read_delim() that e.g. converts "." to 0
+   readTableFast() was changed
+
+
 genomation 1.1.27
 --------------
 
