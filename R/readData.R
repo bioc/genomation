@@ -401,10 +401,10 @@ readNarrowPeak<-function(file, track.line=FALSE, zero.based=TRUE){
 #'                           vector of length 2. example: c("CpGi","shores")
 #' @usage readFeatureFlank(location,remove.unusual=TRUE,flank=2000,
 #'                         clean=TRUE,feature.flank.name=NULL)
-#' @return a GenomicRangesList contatining one GRanges object for flanks and one for GRanges object
+#' @return a GRangesList object containing one GRanges object for flanks and one for GRanges object
 #'         for the main feature.
-#'   NOTE: This can not return a GRangesList at the moment because flanking regions do not
-#'   have to have the same column name as the feature. GRangesList elements should resemble 
+#'   NOTE: This can not return a CompressedGRangesList at the moment because flanking regions do not
+#'   have to have the same column name as the feature. CompressedGRangesList elements should resemble
 #'   each other in the column content. We can not satisfy that criteria for the flanks
 #'
 #' @examples
@@ -429,7 +429,7 @@ setMethod("readFeatureFlank",
             
             feat = readGeneric(location)
             flanks = getFlanks(feat,flank=flank,clean=clean)
-            x = GenomicRangesList(features=feat,flanks=flanks)
+            x = GRangesList(features=feat,flanks=flanks,compress=FALSE)
             if(!is.null(feature.flank.name) & length(feature.flank.name)==2)
               names(x)=feature.flank.name
             
