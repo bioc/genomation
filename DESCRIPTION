@@ -45,14 +45,14 @@ Imports:
     Rsamtools (>= 1.31.2),
     seqPattern,
     rtracklayer (>= 1.39.7),
-    RUnit,
-	Rcpp (>= 0.12.14)
+    Rcpp (>= 0.12.14)
 Suggests:
     BiocGenerics,
     genomationData,
     knitr,
     RColorBrewer,
-    rmarkdown
+    rmarkdown,
+    RUnit
 Collate:
 	'combineScoreMatrixList.R'
     'documentData.R'
