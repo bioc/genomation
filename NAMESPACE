@@ -1,7 +1,7 @@
 import(methods)
 import(Biostrings)
 import(BSgenome)
-import(GenomeInfoDb)
+import(Seqinfo)
 import(GenomicRanges)
 import(GenomicAlignments)
 import(IRanges)

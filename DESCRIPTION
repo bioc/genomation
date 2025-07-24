@@ -1,7 +1,7 @@
 Package: genomation
 Type: Package
 Title: Summary, annotation and visualization of genomic data
-Version: 1.41.0
+Version: 1.41.1
 Author: Altuna Akalin [aut, cre], Vedran Franke [aut, cre], Katarzyna Wreczycka
     [aut], Alexander Gosdschan [ctb], Liz Ing-Simmons [ctb], Bozena Mika-Gospodorz [ctb]
 Maintainer: Altuna Akalin <aakalin@gmail.com>, Vedran Franke
@@ -27,7 +27,7 @@ Imports:
     Biostrings (>= 2.47.6),
     BSgenome (>= 1.47.3),
     data.table,
-    GenomeInfoDb,
+    Seqinfo,
     GenomicRanges (>= 1.31.8),
     GenomicAlignments (>= 1.15.6),
     S4Vectors (>= 0.17.25),
